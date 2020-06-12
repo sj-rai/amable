@@ -25,7 +25,8 @@ You will also see any lint errors in the console.
 
 ## Summary
 
-![](https://github.com/sj-rai/amable/blob/master/public/project-summary.jpg?raw=true)
+<!-- ![](https://github.com/sj-rai/amable/blob/master/public/project-summary.jpg?raw=true) -->
+<img src="https://github.com/sj-rai/amable/blob/master/public/project-summary.jpg?raw=true" alt="drawing" width="780" height="720"/>
 <!-- ### `yarn test`
 
 Launches the test runner in the interactive watch mode.<br />
