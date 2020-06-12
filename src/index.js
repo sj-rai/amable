@@ -1,17 +1,51 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Map from './Components/Map'
+import Card from './Components/Card'
+import Navbar from './Components/Navbar'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Router, Route } from 'react-router'
+import { createBrowserHistory } from "history";
+import ScrollArea from 'react-scrollbar'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+class Application extends React.Component {
+    
+    constructor(props) {
+        super(props);
+       
+    }
+
+    componentDidMount() {
+        
+    }
+    
+    render() {
+        // var geoData;
+        return (
+          // <div>
+          //   {/* <Map/> */}
+          //   <div id="nav">
+          //     <Navbar/>
+          //   </div>
+          //   <div id="map">
+          //     <Map/>
+          //   </div>
+          //   {/* <Map/> */}
+          //   {/* <div ref={el => this.mapContainer = el} className='mapContainer' /> */}
+          <div >
+              <Navbar/>
+              {/* <div className="map"> */}
+              <Router history={createBrowserHistory()}>
+                <Route exact path="/" component={Map}/>
+                {/* <Route path="/info" component={<ScrollArea>{Card}</ScrollArea>}/> */}
+                <Route path="/info" component={Card}/>
+              </Router>
+              {/* <Map/> */}
+              {/* </div> */}
+          </div>
+        )
+    }
+}
+  
+ReactDOM.render(<Application />, document.getElementById('app'));

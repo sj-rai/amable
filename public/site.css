@@ -1,0 +1,68 @@
+.mapContainer {
+    position: absolute;
+    /* position: relative; */
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* z-index: 2; */
+    z-index: -1;
+}
+.sidebarStyle {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 12px;
+    background-color: #404040;
+    color: #ffffff;
+    z-index: 2 !important;
+    padding: 6px;
+}
+/* .card-map {
+    /* position: relative;
+    z-index: 2 !important;
+    padding: 6px;
+    background-color: #404040;
+    /* color: #ffffff; */
+    /* margin: 12px; */
+    /* top: 0; */
+    /* top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; */
+    /* right: 50%; */
+    /* bottom: 50%; */
+    /* width:50%; */ 
+    /* position: relative;
+    background-color: #404040;
+    z-index: 2;
+    padding-right: 20px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; */
+
+/* } */ 
+.card-out {
+    margin: 12px
+}
+.card-border {
+    padding-bottom: 12px
+}
+.center-card {
+    overflow-y: scroll;
+}
+.Fruit {
+    transform: scale(0.4)
+}
+/* .map {
+    position: relative;
+    z-index: 0;
+    height: 100px;
+}
+
+.nav {
+    position: absolute;
+    z-index: 2;
+} */
