@@ -8,10 +8,10 @@ import { ReactComponent as Register} from './register.svg'
 import { Link} from 'react-router-dom'
 // import Cloudant from '@cloudant/cloudant'
 // var cloudant = new Cloudant({
-//     account: `dc6a82a5-9705-409d-a7c1-4f2d4b99d64a-bluemix`,
+//     account: `username`,
 //     plugins: {
 //       iamauth: {
-//         iamApiKey: `3WTx6fujtesOdrek19CNW6H3KXb2BqHuXBsiY9-ghY8J`
+//         iamApiKey: `apikey`
 //       }
 //     }
 // });
