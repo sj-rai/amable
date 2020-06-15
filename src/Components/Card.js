@@ -6,6 +6,16 @@ import { ReactComponent as Fruit } from './fruit.svg';
 import { ReactComponent as Pill } from './pill.svg';
 import { ReactComponent as Register} from './register.svg'
 import { Link} from 'react-router-dom'
+// import Cloudant from '@cloudant/cloudant'
+// var cloudant = new Cloudant({
+//     account: `dc6a82a5-9705-409d-a7c1-4f2d4b99d64a-bluemix`,
+//     plugins: {
+//       iamauth: {
+//         iamApiKey: `3WTx6fujtesOdrek19CNW6H3KXb2BqHuXBsiY9-ghY8J`
+//       }
+//     }
+// });
+// var db = cloudant.db.use('amabledb')
 
 export default class MapComponent extends React.Component {
     constructor(props) {
@@ -16,6 +26,12 @@ export default class MapComponent extends React.Component {
         this.buttonClick = this.buttonClick.bind(this);
     }
     componentDidMount() {
+        // db.get(`138bb0e8dd6bec357208be61f8dafae1`).then((data) => {
+        //     console.log("[dbread]"+JSON.stringify(data))
+        // })
+        // .catch((error) => {
+        //     console.log("[error]"+error)
+        // })
     }
     buttonClick() {
         this.setState({clicked: true})
@@ -102,7 +118,7 @@ export default class MapComponent extends React.Component {
                                 <Pill width={50} height={100} fill='#fff'/>
                                 <Card.Title>Donate</Card.Title>
                                 <Card.Text>
-                                Anjana is looking for medicines
+                                Anjana is looking for paracetamol tablets
                                 </Card.Text>
                                 {/* <Button onClick={this.buttonClick} variant="primary">Request</Button> */}
                                 <Link to='/'>

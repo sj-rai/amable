@@ -6,7 +6,6 @@ import Navbar from './Components/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Router, Route } from 'react-router'
 import { createBrowserHistory } from "history";
-import ScrollArea from 'react-scrollbar'
 
 
 class Application extends React.Component {
