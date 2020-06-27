@@ -1,11 +1,10 @@
-// TODO maybe add unit test later
+import React from 'react';
+import { render } from '@testing-library/react';
+// import App from './App'; // TODO need App
 
-//  import React from 'react';
-// import { render } from '@testing-library/react';
-// import App from './App';
-
-// test('renders learn react link', () => {
-//   const { getByText } = render(<App />);
-//   const linkElement = getByText(/learn react/i);
-//   expect(linkElement).toBeInTheDocument();
-// });
+test('renders learn react link', () => {
+  // TODO add test later
+  // const { getByText } = render(<App />);
+  // const linkElement = getByText(/learn react/i);
+  // expect(linkElement).toBeInTheDocument();
+});
